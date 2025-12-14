@@ -5,11 +5,21 @@ public class Lab404 {
         Scanner scanner = new Scanner(System.in);
 
         String word = "";
-        String stop = "stop";
+        String words = word;
 
-        while(!word.equalsIgnoreCase(stop)){
-            System.out.print("Enter word:");
+        while(true){
+            System.out.print("Enter word: ");
             word = scanner.nextLine();
+
+            if(word.equalsIgnoreCase("stop")){
+                break;
+            }
+
+            if(!word.equalsIgnoreCase("stop")){
+                words = words.concat(word + " ");
+            }
         }
+        
+        System.out.println(words);
     }
 }
