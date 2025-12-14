@@ -10,8 +10,8 @@ public class Lab401 {
             fullname = JOptionPane.showInputDialog("Enter your fullname:");
         }
 
-        JOptionPane.showMessageDialog(null,
-                "Welcome, " + fullname.toUpperCase().charAt(0) +
-                        fullname.substring(1, index) + " " + fullname.toUpperCase().substring(index + 1, fullname.length() - 1));
+        JOptionPane.showMessageDialog(null, "Welcome, " + 
+                fullname.toUpperCase().charAt(0) + fullname.substring(1, index) + " " + 
+                fullname.toUpperCase().substring(index + 1, fullname.length() - 1));
     }
 }
